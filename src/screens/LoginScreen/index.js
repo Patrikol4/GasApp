@@ -220,7 +220,8 @@ tryLogin() {
   }
 
   console.error(error);
-});
+})
+    .then(() => this.setState({ isLoading: false }))
     
   }
 
